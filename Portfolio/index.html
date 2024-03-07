@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id = "header">
+        <div class="container">
+            <nav>
+                <img src="images/logo8.webp" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span> Ruchi</span><br>Yadav From India</h1>
+
+            </div>
+        </div>
+</div>
+<! --------------------about--------- >
+<div id="about"></div>
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+        <img src="images/about-us.webp">
+    </div>
+        <div class="about-col-2">
+        <h1 class="sub-titles">About Me</h1>
+        <p>Hi! My Name is Ruchi Yadav. I enjoy creating things that live on internet.
+          Strong in design and integration with intuitive problem-solving skills.
+             Proficient in HTML, CSS,Javascript, Bootstrap ,REST API's,Core-JAVA and SQL. 
+             Passionate about implementing and launching new projects. Ability to translate
+              business requirements into technical solutions.
+             My dream is to secure a challenging position in a reputable organization to
+             expand my learnings, knowledge, and skills Secure a responsible career opportunity
+              to fully utilize my training and skills, while making a significant contribution to
+               the success of the company. To make use of my interpersonal skills to achieve 
+                goals of a company that focuses on customer satisfaction and customer experience.</p>
+             <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Experiance')">Experiance</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+             </div>
+             <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>HTML</span><br>Made a trubute Page</li><br>
+                    <li><span>CSS</span><br>Made a resume using html CSS</li><br>
+                    <li><span>Java Script</span><br>To-DO Apps</li><br>
+                    <li><span>SQL</span><br>Database Management</li><br>
+                </ul>
+             </div>
+             <div class="tab-contents" id="Experiance">
+                <ul>
+                    <li><span>March 2022 to Present</span><br>L&T Technology Services| Consultant </li><br>
+                    <li><span>2021 to 2022</span><br>Join Course fo Digikull</li><br>
+                </ul>
+             </div>
+             <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2021</span><br>B.tech Completed</li><br>
+                    <li><span>2017</span><br>12th standard completed</li><br>
+                    <li><span>2015</span><br>10th completed</li><br>
+                </ul>
+             </div>
+
+        </div>
+    </div>
+</div>
+<!----------services ---------------------->
+<div id="services">
+    <div class="container">
+        <h1 class = "sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ab eligendi tempore neque 
+                    corrupti saepe minus, perferendis distinctio veritatis corporis quibusdam beatae, nesciunt nisi
+                     numquam impedit earum voluptatibus consequatur perspiciatis.</p>
+                     <a href="#">learn more</a>
+            </div>
+        <div>
+                <h2>Database</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ab eligendi tempore neque 
+                    corrupti saepe minus, perferendis distinctio veritatis corporis quibusdam beatae, nesciunt nisi
+                     numquam impedit earum voluptatibus consequatur perspiciatis.</p>
+                     <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>SAP SD</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ab eligendi tempore neque 
+                    corrupti saepe minus, perferendis distinctio veritatis corporis quibusdam beatae, nesciunt nisi
+                     numquam impedit earum voluptatibus consequatur perspiciatis.</p>
+                     <a href="#">learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+</script>
+</body>
+</html>
